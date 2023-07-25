@@ -37,4 +37,23 @@ print(list(range(10)))
 print(list(range(1, 100, 10)))
 print(list(range(1, 32)))
 
+# %% list comprehension
+
+lst = list(range(1, 11))
+print([i**2 for i in range(1, 11) if i > 5])
+
+tp = ('apple', 'banana', 'arange')
+print( [len(i) for i in tp])
+
+d = { 100: 'apple', 200: 'kiwi'}
+print( [v.upper() for v in d.values()])
+print( [v for v in d])
+
+# %%
+for i in map(lambda x: x+10, lst):
+    print(i)
+
+for i in map(lambda x: x*x, range(10)):
+    print(i)
+    
 # %%

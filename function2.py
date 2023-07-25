@@ -24,7 +24,7 @@ print(times(5))
 print(times(5, 6))
 
 # 키워드 인자
-def connectURL(server, port):
+def connectURL(server: str, port: int|str) -> str :
     strURL = 'https://' + server + ':' + port
     return strURL
 

@@ -30,8 +30,24 @@ data = 100
 # %%
 # type hints
 
-def square(number: Union[int, float]) -> Union[int, float]:
-    return number ** 2
+# def square(number: union[int, float]) -> union[int, float]:
+#     return number ** 2
 
 def square(number: int | float) -> int | float:
     return number ** 2
+
+# %%
+# str = 'data'
+class GString:
+    def __init__(self):
+        self.str = ''
+    def set(self, msg):
+        self.str = msg
+    def print(self):
+        print(str)
+
+g = GString()
+g.set('First Message')
+g.print()
+# %%
+p = object()
