@@ -28,3 +28,10 @@ g(2, 3)
 data = 100
 
 # %%
+# type hints
+
+def square(number: Union[int, float]) -> Union[int, float]:
+    return number ** 2
+
+def square(number: int | float) -> int | float:
+    return number ** 2
