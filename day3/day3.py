@@ -104,3 +104,16 @@ def greeting(name):
 
 greeting('Park')
 
+# %%
+'{}'.format(10)
+'{:b}'.format(10)
+'{:o}'.format(10)
+'{:,}'.format(1500000)
+
+'{:e}'.format(3/4)
+'{:.2f}'.format(10)
+'{:>20.2f}'.format(10)
+'{}'.format(10)
+
+
+# %%
