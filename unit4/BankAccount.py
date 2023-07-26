@@ -19,7 +19,7 @@ account1 = BankAccount(100, "전우치", 15000)
 account1.deposit(5000)
 account1.withdraw(3000)
 print(account1)
-print(account1.__id)
+# print(account1.__id)
 
 # class BankAccount:
 #     def __init__(self, id, name, balance):
