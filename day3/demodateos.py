@@ -55,3 +55,6 @@ print(result)
 
 for item in glob.iglob('*.*'):
     print(item)
+
+# %%
+import math
