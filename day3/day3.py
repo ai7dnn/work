@@ -116,4 +116,14 @@ greeting('Park')
 '{}'.format(10)
 
 
+# %% time
+import time as t
+
+print(dir(t))
+
+t.time()
+t.time()
+t.sleep(10)
+t.gmtime()
+t.localtime()
 # %%

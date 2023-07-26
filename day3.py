@@ -113,7 +113,19 @@ greeting('Park')
 '{:e}'.format(3/4)
 '{:.2f}'.format(10)
 '{:>20.2f}'.format(10)
+'{:<20.2f}'.format(10)
+'{:^20.2f}'.format(10)
 '{}'.format(10)
 
 
 # %%
+from datetime import *
+
+date(2023, 5, 1)
+date(2023, 5, 1)
+date(2023, 5, 1)
+date.today()
+d1 = date.today()
+d2 = timedelta(days=100)
+d1 + d2 
+
