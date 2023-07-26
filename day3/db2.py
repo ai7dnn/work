@@ -1,7 +1,10 @@
 import sqlite3 
 
-con = sqlite3.connect("D:\\hskang\\work\\test.db")
-con = sqlite3.connect(":memory:")
+# 파일에 저장
+con = sqlite3.connect("D:\\hskang\\work\\sample.db")
+# 메모리에 저장
+# con = sqlite3.connect(":memory:")
+
 # 커서 객체
 cur = con.cursor()
 
@@ -31,12 +34,18 @@ con.commit()
 
 # 검색 구문
 cur.execute('select * from PhoneBook;')
-print('----fectchone()---------')
-print(cur.fetchone())
-print(cur.fetchmany(2))
-print(cur.fetchall())
-
-cur.execute('select * from PhoneBook;')
 print(cur.fetchall())
 # for row in cur:
 #     print(row)
+
+# %% 조회만
+import sqlite3 
+
+# 파일에 저장
+con = sqlite3.connect("D:\\hskang\\work\\sample.db")
+# 커서 객체
+cur = con.cursor()
+
+# 검색 구문
+cur.execute('select * from PhoneBook;')
+print(cur.fetchall())
