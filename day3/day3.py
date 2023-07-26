@@ -127,3 +127,11 @@ t.sleep(10)
 t.gmtime()
 t.localtime()
 # %%
+import inspect
+import random
+print(inspect.getfile(random))
+
+# %%
+import inspect
+import math
+print(inspect.getfile(math))
